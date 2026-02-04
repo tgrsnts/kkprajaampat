@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Navbar from "@/app/Component/Navbar";
+import Link from "next/link";
 
 export default function Sejarah() {
 
@@ -21,11 +22,6 @@ export default function Sejarah() {
       year: "1860-1869",
       title: "Ekspedisi Wallacea dan the Malay Archipelago",
       description: "Kepulauan Raja Ampat merupakan salah satu daerah yang menjadi fokus dari ekspedisi Alfred Russel Wallace, atau yang dikenal dengan Ekspedisi Wallacea, pada tahun 1860 (dari berbagai sumber). Hasil ekspedisinya tersebut tertuang dalam “The Malay Archipelago” (terbit 1869), dan sekaligus mengonfirmasi keberlimpahan keanekaragaman hayati Raja Ampat dan beberapa tempat lain di Indonesia."
-    },
-    {
-      year: "Raja Ampat Hari ini",
-      title: "'Jantung' Segi Tiga Terumbu Karang",
-      description: "Pada tahun 2002, sebuah tim yang terdiri atas ilmuwan dari Indonesia dan mancanegara memublikasikan “A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia” [Tautan untuk unduhan]. Penelitian tersebut merupakan tonggak awal masyarakat dan pemangku kepentingan di Raja Ampat dalam mengembangkan pengelolaan kawasan konservasi perairan beserta pemanfaatannya yang berkelanjutan."
     }
   ];
 
@@ -46,7 +42,7 @@ export default function Sejarah() {
       className="min-h-screen bg-fixed bg-center bg-cover"
       style={{ backgroundImage: "url('/images/Foto 4-1 oleh Nikka Gunadharma.jpg')" }}
     >
-      <Navbar/>
+      <Navbar />
 
       {/* Hero Section (Transparan, hanya konten) */}
       <section className="relative h-[60vh] flex flex-col items-center justify-center text-white">
@@ -127,6 +123,43 @@ export default function Sejarah() {
                 </div>
               </motion.div>
             ))}
+
+            <motion.div
+
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: 3 * 0.1 }}
+              className="flex mb-20 last:mb-0 relative z-10"
+            >
+              {/* Kolom Kiri: Tahun */}
+              <div className="w-[40%] md:w-[50%] pr-8 md:pr-16 text-right flex flex-col justify-center">
+                <h2 className="text-white text-4xl md:text-6xl font-bold leading-none">
+                  Raja Ampat Hari ini
+                </h2>
+              </div>
+
+              {/* ANIMASI TITIK PUTIH */}
+              <motion.div
+                initial={{ scale: 0, rotate: -45 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+                className="absolute left-[40px] md:left-1/2 -translate-x-1/2 -mt-2"
+              >
+                <CustomMarker />
+              </motion.div>
+
+              {/* Kolom Kanan: Konten */}
+              <div className="w-[60%] md:w-[50%] pl-8 md:pl-16">
+                <h3 className="text-white text-xl md:text-2xl font-bold mb-4">
+                  Jantung' Segi Tiga Terumbu Karang
+                </h3>
+                <p className="text-gray-200 text-sm md:text-base leading-relaxed">
+                  Pada tahun 2002, sebuah tim yang terdiri atas ilmuwan dari Indonesia dan mancanegara memublikasikan <a target="_blank" className="underline" href={'/A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia.pdf'}>“A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia”</a>. Penelitian tersebut merupakan tonggak awal masyarakat dan pemangku kepentingan di Raja Ampat dalam mengembangkan pengelolaan kawasan konservasi perairan beserta pemanfaatannya yang berkelanjutan.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
       </section>
