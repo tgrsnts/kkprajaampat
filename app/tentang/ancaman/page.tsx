@@ -118,7 +118,7 @@ export default function Ancaman() {
               className="md:w-1/2 space-y-6"
             >
               <p className="text-gray-200 leading-relaxed text-justify">
-                Keberadaan pengelolaan kawasan-kawasan konservasi perairan di Raja Ampat dengan signifikan mengurangi aktivitas perikanan merusak dan penangkapan fauna laut yang penting dan/atau dilindungi, dan membatasi aktivitas perikanan berlebih yang kini sebagian besar masih dilakukan oleh kapal-kapal bagan, terutama di Area IV Kepulauan Misool dan Area VII Misool Utara. <Link href="/" className="underline">Klik di sini</Link> untuk memantau aktivitas pengawasan kami.
+                Keberadaan pengelolaan kawasan-kawasan konservasi perairan di Raja Ampat dengan signifikan mengurangi aktivitas perikanan merusak dan penangkapan fauna laut yang penting dan/atau dilindungi, dan membatasi aktivitas perikanan berlebih yang kini sebagian besar masih dilakukan oleh kapal-kapal bagan, terutama di Area IV Kepulauan Misool dan Area VII Misool Utara. <Link href="/" className="underline font-bold">Klik di sini</Link> untuk memantau aktivitas pengawasan kami.
               </p>
             </motion.div>
 

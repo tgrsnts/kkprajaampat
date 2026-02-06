@@ -157,7 +157,7 @@ export default function Sejarah() {
                   Jantung' Segi Tiga Terumbu Karang
                 </h3>
                 <p className="text-gray-200 text-sm md:text-base leading-relaxed">
-                  Pada tahun 2002, sebuah tim yang terdiri atas ilmuwan dari Indonesia dan mancanegara memublikasikan <a target="_blank" className="underline" href={'/A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia.pdf'}>“A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia”</a>. Penelitian tersebut merupakan tonggak awal masyarakat dan pemangku kepentingan di Raja Ampat dalam mengembangkan pengelolaan kawasan konservasi perairan beserta pemanfaatannya yang berkelanjutan.
+                  Pada tahun 2002, sebuah tim yang terdiri atas ilmuwan dari Indonesia dan mancanegara memublikasikan <a target="_blank" className="underline font-bold" href={'/A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia.pdf'}>“A Marine Rapid Assessment of the Raja Ampat Islands, Papua Province, Indonesia”</a>. Penelitian tersebut merupakan tonggak awal masyarakat dan pemangku kepentingan di Raja Ampat dalam mengembangkan pengelolaan kawasan konservasi perairan beserta pemanfaatannya yang berkelanjutan.
                 </p>
               </div>
             </motion.div>

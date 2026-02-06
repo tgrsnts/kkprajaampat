@@ -71,7 +71,7 @@ export default function PengelolaanKawasan() {
                     transition: { duration: 0.8, ease: "easeOut" }
                   }
                 }} className="text-gray-200 text-lg leading-relaxed text-justify">
-                  Badan Layanan Umum Daerah Unit Pelaksana Teknis Daerah (BLUD UPTD) Pengelolaan Kawasan Konservasi di Perairan (KKP) Kepulauan Raja Ampat adalah nama resmi kami sebagai Satuan Unit Organisasi Pengelola (SUOP) yang melaksanaan pengelolaan kawasan konservasi di <Link href="/kawasan-konservasi" className="underline"><b>tujuh area</b></Link> seluas <Link href="/peta-kawasan" className="underline"><b>1.982.396,39 hektare</b></Link>.
+                  Badan Layanan Umum Daerah Unit Pelaksana Teknis Daerah (BLUD UPTD) Pengelolaan Kawasan Konservasi di Perairan (KKP) Kepulauan Raja Ampat adalah nama resmi kami sebagai Satuan Unit Organisasi Pengelola (SUOP) yang melaksanaan pengelolaan kawasan konservasi di <Link href="/kawasan-konservasi" className="underline font-bold">tujuh area</Link> seluas <Link href="/peta-kawasan" className="underline font-bold">1.982.396,39 hektare</Link>.
                 </motion.p>
               </div>
 
@@ -197,7 +197,7 @@ export default function PengelolaanKawasan() {
                       transition: { duration: 0.8, ease: "easeOut" }
                     }
                   }} className="text-sm opacity-80 text-gray-200 italic">
-                    Untuk keterangan lebih terperinci mengenai apa yang boleh dan tidak boleh dilakukan di KKP Kepulauan Raja Ampat, silakan <Link href="/panduan" className="underline hover:text-blue-300 transition-colors">klik di sini</Link>.
+                    Untuk keterangan lebih terperinci mengenai apa yang boleh dan tidak boleh dilakukan di KKP Kepulauan Raja Ampat, silakan <Link href="/panduan" className="underline font-bold hover:text-blue-300 transition-colors">klik di sini</Link>.
                   </motion.p>
                 </motion.div>
 
