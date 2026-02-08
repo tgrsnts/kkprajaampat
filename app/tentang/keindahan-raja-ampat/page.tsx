@@ -60,7 +60,7 @@ export default function Keindahan() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
@@ -68,6 +68,11 @@ export default function Keindahan() {
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
                 <img src="/images/Foto 8-1 oleh Abdi Hasan.JPG" alt="Manta Ray" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  KKP Kepulauan Raja Ampat adalah habitat penting bagi populasi pari manta.
+                </p>
               </div>
             </div>
           </motion.section>
@@ -92,7 +97,7 @@ export default function Keindahan() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
@@ -100,6 +105,11 @@ export default function Keindahan() {
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
                 <img src="/images/Foto 5-1 oleh Rens Lewerissa.JPG" alt="Waterfall" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  Air terjun War Inkabom yang berada di Kawasan Konservasi Area III Selat Dampier.
+                </p>
               </div>
             </div>
           </motion.section>
@@ -124,7 +134,7 @@ export default function Keindahan() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
@@ -132,6 +142,11 @@ export default function Keindahan() {
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
                 <img src="/images/Foto 6-3 oleh Rens Lewerissa.JPG" alt="Coastal View" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  Salah satu pantai di Kepulauan Ayau.
+                </p>
               </div>
             </div>
           </motion.section>
@@ -150,14 +165,14 @@ export default function Keindahan() {
             </div>
           </div>
           {/* WELCOME FOOTER */}
-        <section className="py-24 text-center">
-          <h2 className="text-white text-5xl font-bold tracking-tight">
-            Selamat datang di Raja Ampat.
-          </h2>
-        </section>
+          <section className="py-24 text-center">
+            <h2 className="text-white text-5xl font-bold tracking-tight">
+              Selamat datang di Raja Ampat.
+            </h2>
+          </section>
         </section>
 
-        
+
       </section>
     </main>
   );
