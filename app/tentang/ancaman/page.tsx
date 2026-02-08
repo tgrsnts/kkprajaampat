@@ -58,14 +58,19 @@ export default function Ancaman() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
                 <CornerSVG className="-top-2 -right-2" />
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
-                <img src="/images/Foto 0-1.JPG" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 h-full object-cover relative z-20" />
+                <img src="/images/Foto 0-1.JPG" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  Kerja sama aparat penegak hukum dan Tim Jaga Laut membekuk kapal penangkap hiu dan pari; dua spesies yang dilindungi di perairan Raja Ampat.
+                </p>
               </div>
             </div>
           </motion.section>
@@ -90,7 +95,7 @@ export default function Ancaman() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
@@ -98,6 +103,11 @@ export default function Ancaman() {
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
                 <img src="/images/Foto 2-1 oleh Nikka Gunadharma.jpg" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  Sepetak terumbu karang dan ikan-ikan kecil di antara puing-puing terumbu karang yang telah rusak.
+                </p>
               </div>
             </div>
           </motion.section>
@@ -122,7 +132,7 @@ export default function Ancaman() {
               </p>
             </motion.div>
 
-            <div className="md:w-1/2 flex justify-center"> {/* Gambar Diam */}
+            <div className="md:w-1/2 flex flex-col items-center justify-center"> {/* Gambar Diam */}
               <div className="w-3/4 relative">
                 {/* SVG di Sudut Gambar */}
                 <CornerSVG className="-scale-x-100 -top-2 -left-2 flip" />
@@ -130,6 +140,11 @@ export default function Ancaman() {
                 <CornerSVG className="-bottom-2 -left-2 rotate-180" />
                 <CornerSVG className="-scale-x-100 -bottom-2 -right-2 rotate-180" />
                 <img src="/images/Foto 5-1 oleh Nikka Gunadharma.jpg" className="rounded-xl shadow-2xl border-4 border-[#3B99AA]/80 w-full object-cover relative z-20" />
+              </div>
+              <div className="w-3/4 px-8">
+                <p className="mt-4 text-sm opacity-60 italic text-center font-light">
+                  Aktivitas Jaga Laut adalah salah satu layanan yang rutin kami selenggarakan, setidak-tidaknya delapan kali di masing-masing kawasan kelola kami.
+                </p>
               </div>
             </div>
           </motion.section>
