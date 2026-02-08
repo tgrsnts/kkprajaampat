@@ -9,14 +9,13 @@ export default function Sejarah() {
     {
       year: "55.000",
       subYear: "tahun lalu",
-      title: "Jejak Awal Manusia Modern",
+      title: "Jejak Awal Manusia ‘Modern’",
       description: "Berdasarkan jurnal ilmiah yang terbit pada tahun 2024 lalu, manusia modern (Homo sapiens) sudah ‘mengunjungi Raja Ampat sekitar 55.000 tahun lalu.’ Tim arkeologis yang terdiri atas peneliti dari Australia, Selandia Baru dan Indonesia tersebut didasari atas penemuan di Gua Mololo di Pulau Waigeo yang lalu dikembangkan menjadi dua teori rute migrasi, yaitu rute utara dan rute selatan (Disadur dari National Geographic, 4 September 2024)."
     },
     {
-      year: "Abad",
-      subYear: "ke-15",
+      year: "Abad 15",
       title: "Pengaruh Kesultanan Tidore",
-      description: "pada abad ke-15 Kesultanan Tidore mulai mengembangkan pengaruhnya di Raja Ampat dan daerah pesisir Papua lainnya baik di utara maupun selatan (dari berbagai sumber). Asimilasi adat istiadat dan tradisi Tidore dengan masyarakat Raja Ampat menjadi suatu keniscayaan, suatu keunikan yang hari ini dapat dilihat pada, contohnya, masyarakat di Kepulauan Misool."
+      description: "Pada abad ke-15 Kesultanan Tidore mulai mengembangkan pengaruhnya di Raja Ampat dan daerah pesisir Papua lainnya baik di utara maupun selatan (dari berbagai sumber). Asimilasi adat istiadat dan tradisi Tidore dengan masyarakat Raja Ampat menjadi suatu keniscayaan, suatu keunikan yang hari ini dapat dilihat pada, contohnya, masyarakat di Kepulauan Misool."
     },
     {
       year: "1860-1869",
