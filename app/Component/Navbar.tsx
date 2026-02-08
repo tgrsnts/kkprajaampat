@@ -6,7 +6,9 @@ import Link from "next/link"
 export default function Navbar() {
     const [openTentang, setOpenTentang] = useState(false);
     const [openPK, setOpenPK] = useState(false);
+    const [openKawasan, setOpenKawasan] = useState(false);
     const [openLayanan, setOpenLayanan] = useState(false);
+    const [openInformasiTerkini, setOpenInformasiTerkini] = useState(false);
 
     return (
         <nav className="fixed top-0 w-full z-50 transition-all duration-500 bg-[#004267]/90 backdrop-blur-md py-4 shadow-2xl">
@@ -83,13 +85,35 @@ export default function Navbar() {
                                     </li>
                                     <li className="hover:bg-black/40 transition-all cursor-pointer">
                                         <Link href="/pengelolaan-kawasan/evika" className="block px-6 py-2 normal-case tracking-normal">EVIKA</Link>
-                                    </li>                                    
+                                    </li>
                                 </motion.ul>
                             )}
                         </AnimatePresence>
                     </li>
 
-                    <li className="hover:opacity-60 cursor-pointer transition-opacity pb-1 whitespace-nowrap">Kawasan Konservasi</li>
+                    {/* DROPDOWN KAWASAN KELOLA KAMI */}
+                    <li
+                        className="relative py-2"
+                        onMouseEnter={() => setOpenKawasan(true)}
+                        onMouseLeave={() => setOpenKawasan(false)}
+                    >
+                        <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openKawasan ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
+                            Kawasan Kelola Kami
+                            <svg className={`w-3 h-3 transition-transform ${openKawasan ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
+                        </div>
+                        <AnimatePresence>
+                            {openKawasan && (
+                                <motion.ul
+                                    initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
+                                    className="absolute top-full left-0 bg-[#004267] min-w-[220px] rounded-xl mt-2 py-4 shadow-2xl border border-white/10"
+                                >
+                                    <li className="px-6 py-2 hover:bg-black/40 transition-all cursor-pointer normal-case tracking-normal">Izin Masuk (TARIF)</li>
+                                    <li className="px-6 py-2 hover:bg-black/40 transition-all cursor-pointer normal-case tracking-normal">Penelitian</li>
+                                    <li className="px-6 py-2 hover:bg-black/40 transition-all cursor-pointer normal-case tracking-normal">Pengaduan</li>
+                                </motion.ul>
+                            )}
+                        </AnimatePresence>
+                    </li>
 
                     {/* DROPDOWN LAYANAN */}
                     <li
@@ -98,7 +122,7 @@ export default function Navbar() {
                         onMouseLeave={() => setOpenLayanan(false)}
                     >
                         <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openLayanan ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
-                            Layanan
+                            Layanan Kami
                             <svg className={`w-3 h-3 transition-transform ${openLayanan ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
                         </div>
                         <AnimatePresence>
@@ -115,8 +139,32 @@ export default function Navbar() {
                         </AnimatePresence>
                     </li>
 
-                    <li className="hover:opacity-60 cursor-pointer transition-opacity pb-1">Publikasi</li>
-                    <li className="hover:opacity-60 cursor-pointer transition-opacity pb-1">Kontak</li>
+                    {/* DROPDOWN INFORMASI TERKINI */}
+                    <li
+                        className="relative py-2"
+                        onMouseEnter={() => setOpenInformasiTerkini(true)}
+                        onMouseLeave={() => setOpenInformasiTerkini(false)}
+                    >
+                        <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openInformasiTerkini ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
+                            Informasi Terkini
+                            <svg className={`w-3 h-3 transition-transform ${openInformasiTerkini ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
+                        </div>
+                        <AnimatePresence>
+                            {openInformasiTerkini && (
+                                <motion.ul
+                                    initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
+                                    className="absolute top-full left-0 bg-[#004267] min-w-[220px] rounded-xl mt-2 py-4 shadow-2xl border border-white/10"
+                                >
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/informasi-terkini/berita" className="block px-6 py-2 normal-case tracking-normal">Berita dari Lapangan</Link>
+                                    </li>
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/informasi-terkini/kalender-kegiatan" className="block px-6 py-2 normal-case tracking-normal">Kalender Kegiatan </Link>
+                                    </li>
+                                </motion.ul>
+                            )}
+                        </AnimatePresence>
+                    </li>
                 </ul>
 
                 {/* LANGUAGE */}
