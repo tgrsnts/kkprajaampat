@@ -5,6 +5,7 @@ import Link from "next/link"
 
 export default function Navbar() {
     const [openTentang, setOpenTentang] = useState(false);
+    const [openPK, setOpenPK] = useState(false);
     const [openLayanan, setOpenLayanan] = useState(false);
 
     return (
@@ -25,7 +26,7 @@ export default function Navbar() {
                         onMouseEnter={() => setOpenTentang(true)}
                         onMouseLeave={() => setOpenTentang(false)}
                     >
-                        <div className="hover:opacity-60 cursor-pointer transition-opacity border-b-2 border-white pb-1 flex items-center gap-1">
+                        <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openTentang ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
                             Tentang
                             <svg className={`w-3 h-3 transition-transform ${openTentang ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
                         </div>
@@ -55,7 +56,39 @@ export default function Navbar() {
                         </AnimatePresence>
                     </li>
 
-                    <li className="hover:opacity-60 cursor-pointer transition-opacity pb-1">Pengelolaan Kawasan</li>
+                    {/* DROPDOWN PENGELOLAAN KAWASAN */}
+                    <li
+                        className="relative py-2"
+                        onMouseEnter={() => setOpenPK(true)}
+                        onMouseLeave={() => setOpenPK(false)}
+                    >
+                        <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openPK ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
+                            Pengelolaan Kawasan
+                            <svg className={`w-3 h-3 transition-transform ${openPK ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
+                        </div>
+                        <AnimatePresence>
+                            {openPK && (
+                                <motion.ul
+                                    initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }}
+                                    className="absolute top-full left-0 bg-[#004267] min-w-[220px] rounded-xl mt-2 py-4 shadow-2xl border border-white/10"
+                                >
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/pengelolaan-kawasan/dasar-hukum" className="block px-6 py-2 normal-case tracking-normal">Dasar Hukum</Link>
+                                    </li>
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/pengelolaan-kawasan/aturan-dan-regulasi" className="block px-6 py-2 normal-case tracking-normal">Aturan dan Regulasi</Link>
+                                    </li>
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/pengelolaan-kawasan/tugas-pokok-dan-fungsi" className="block px-6 py-2 normal-case tracking-normal">Tugas Pokok dan Fungsi</Link>
+                                    </li>
+                                    <li className="hover:bg-black/40 transition-all cursor-pointer">
+                                        <Link href="/pengelolaan-kawasan/evika" className="block px-6 py-2 normal-case tracking-normal">EVIKA</Link>
+                                    </li>                                    
+                                </motion.ul>
+                            )}
+                        </AnimatePresence>
+                    </li>
+
                     <li className="hover:opacity-60 cursor-pointer transition-opacity pb-1 whitespace-nowrap">Kawasan Konservasi</li>
 
                     {/* DROPDOWN LAYANAN */}
@@ -64,7 +97,7 @@ export default function Navbar() {
                         onMouseEnter={() => setOpenLayanan(true)}
                         onMouseLeave={() => setOpenLayanan(false)}
                     >
-                        <div className="hover:opacity-60 cursor-pointer transition-opacity pb-1 flex items-center gap-1">
+                        <div className={`hover:opacity-60 cursor-pointer transition-opacity ${openLayanan ? "border-b-2 border-white" : ""} pb-1 flex items-center gap-1`}>
                             Layanan
                             <svg className={`w-3 h-3 transition-transform ${openLayanan ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
                         </div>
