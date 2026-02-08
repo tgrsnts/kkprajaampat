@@ -197,7 +197,7 @@ export default function PengelolaanKawasan() {
                       transition: { duration: 0.8, ease: "easeOut" }
                     }
                   }} className="text-sm opacity-80 text-gray-200 italic">
-                    Untuk keterangan lebih terperinci mengenai apa yang boleh dan tidak boleh dilakukan di KKP Kepulauan Raja Ampat, silakan <Link href="/panduan" className="underline font-bold hover:text-blue-300 transition-colors">klik di sini</Link>.
+                    Untuk keterangan lebih terperinci mengenai apa yang boleh dan tidak boleh dilakukan di KKP Kepulauan Raja Ampat, silakan <a target="_blank" className="underline font-bold" href={"/07 Daftar Kegiatan Berdasarkan Zonasi KKP Kepulauan Raja Ampat.pdf"}>klik di sini</a>.
                   </motion.p>
                 </motion.div>
 
