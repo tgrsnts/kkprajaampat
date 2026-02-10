@@ -74,57 +74,39 @@ export default function DasarHukum() {
     {
       uu: "UU No. 23 Tahun 2014",
       tentang: "Pemerintahan Daerah",
-      deskripsi: "Mengatur peralihan kewenangan pengelolaan laut kepada pemerintah provinsi–BLUD UPTD Pengelolaan KKP Kepulauan Raja Ampat sekarang berada dalam naungan Dinas Pertanian, Pangan, Kelautan dan Perikanan (P2KP) Provinsi Papua Barat Daya.",
+      deskripsi: "UU ini merevisi UU No. 32 Tahun 2004 yang merupakan peraturan perundang-undangan kunci dalam proses desentralisasi kewenangan pemerintah pusat kepada pemerintah daerah. Revisi ini juga mencakup peralihan kewenangan pengelolaan laut kepada pemerintah provinsi–BLUD UPTD Pengelolaan KKP Kepulauan Raja Ampat sekarang berada dalam naungan Dinas Kelautan dan Perikanan (DKP) Provinsi Papua Barat Daya.",
       link: "/pengelolaan-kawasan/dasar-hukum/UU No. 23 Tahun 2014 tentang Pemerintah Daerah (1).pdf"
+    },
+    {
+      uu: "UU No. 27 Tahun 2007",
+      tentang: "Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil",
+     deskripsi: "UU ini menggunakan terminologi ‘kawasan konservasi di wilayah pesisir dan pulau-pulau kecil’ yang, dalam peraturan turunan di tingkat menteri sekarang, berkembang menggunakan istilah ‘kawasan konservasi di perairan’ untuk merujuk kepada penetapan kawasan tertentu, termasuk bagi KKP Kepulauan Raja Ampat. UU ini telah direvisi melalui UU No. 6 Tahun 2023 tentang Cipta Kerja.",
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 27 Tahun 2007 tentang Pengelolaan WP-3-K (1).PDF"
+    },
+    {
+      uu: "UU No. 45 Tahun 2009",
+      tentang: "Perikanan",
+      deskripsi: "UU ini merevisi UU No. 31 Tahun 2004, dan memperinci fungsi KKP sebagai salah satu pendekatan pengelolaan untuk melestarikan sumber daya perikanan. Dalam revisi UU ini terminologi ‘kawasan konservasi perairan’ sudah digunakan.",
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 45 Tahun 2009 tentang Perubahan Atas UU Perikanan.pdf"              
+    },
+    {
+      uu: "UU No. 1 Tahun 2014",
+      tentang: "Pengelolaan Wilayah Pesisir dan Pulau-pulau Kecil",
+      deskripsi: "Keberadaan dan pengelolaan KKP termasuk ke dalam Rencana Zonasi Wilayah Pesisir dan Pulau-pulau Kecil (RZWP-3-K)–dokumen tata ruang laut–sebagaimana diatur dalam perubahannya. Selain kawasan konservasi, RZWP-3-K juga mencakup pengelolaan kawasan pemanfaatan umum, kawasan strategis nasional tertentu, dan kawasan alur laut. UU ini merevisi UU No. 27 Tahun 2007.",
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 1 Tahun 2014 tentang Perubahan Atas UU No. 27 Tahun 2007.pdf"
     },
     {
       uu: "UU No. 32 Tahun 2014",
       tentang: "Kelautan",
-      deskripsi: "Mengatur lebih jauh pengelolaan tersebut sebagai “penyelenggaraan kegiatan, penyediaan, pengusahaan dan pemanfaatan sumber daya kelautan serta konservasi laut.”",
+      deskripsi: "UU ini mengatur lebih jauh pengelolaan tersebut sebagai “penyelenggaraan kegiatan, penyediaan, pengusahaan dan pemanfaatan sumber daya kelautan serta konservasi laut.” Lebih jauh, UU ini juga merupakan dasar hukum bagi pembangunan dan pengembangan kelautan, pengelolaan ruang laut, aspek pertahanan dan keamanan, penegakan hukum, keselamatan di laut, tata kelola dan kelembagaan, serta peran serta masyarakat.",
       link: "/pengelolaan-kawasan/dasar-hukum/UU No. 32 Tahun 2014 tentang Kelautan.PDF"
     },
     {
-      uu: "UU No. 27 Tahun 2007 yang direvisi melalui UU No. 6 Tahun 2023",
-      tentang: "Cipta Kerja (Revisi UU 27/2007)",
-      deskripsi: "Menggunakan terminologi ‘kawasan konservasi di wilayah pesisir dan pulau-pulau kecil’ yang, dalam peraturan turunan di tingkat menteri sekarang, berkembang menggunakan istilah ‘kawasan konservasi di perairan’ untuk merujuk kepada penetapan kawasan tertentu, termasuk bagi KKP Kepulauan Raja Ampat.",
-      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 27 Tahun 2007 tentang Pengelolaan WP-3-K (1).PDF"
-    },
-    {
-      uu: "UU No. 31/2004 yang direvisi melalui UU No. 45/2009",
-      tentang: "Perikanan",
-      deskripsi: "Memperinci fungsi KKP sebagai salah satu pendekatan pengelolaan untuk melestarikan sumber daya perikanan. Dalam revisi UU ini terminologi ‘kawasan konservasi perairan’ sudah digunakan.",
-      link: {
-        1: {
-          namafile: "UU No. 31 Tahun 2004 tentang Perikanan",
-          link: "/pengelolaan-kawasan/dasar-hukum/UU No. 31 Tahun 2004 tentang Perikanan.pdf"
-        },
-        2: {
-          namafile: "UU No. 45 Tahun 2009 tentang Perubahan Atas UU 31 Tahun 2004 tentang Perikanan",
-          link: "/pengelolaan-kawasan/dasar-hukum/UU No. 45 Tahun 2009 tentang Perubahan Atas UU Perikanan.pdf"
-        }
-      }
-    },
-    {
       uu: "UU No. 32 Tahun 2024",
-      tentang: "KSDAE (Revisi UU 5/1990)",
-      deskripsi: "Menjabarkan “kawasan konservasi di perairan , wilayah pesisir dan pulau-pulau kecil” sebagai bagian dari “pengelolaan sumber daya alam hayati” dan “perlindungan sistem penyangga kehidupan.”",
+      tentang: "Konservasi Sumber Daya Alam Hayati dan Ekosistemnya",
+      deskripsi: "UU ini menjabarkan “kawasan konservasi di perairan , wilayah pesisir dan pulau-pulau kecil” sebagai bagian dari “pengelolaan sumber daya alam hayati” dan “perlindungan sistem penyangga kehidupan.” UU ini merevisi UU No. 5 Tahun 1990 yang juga menandakan perubahan pendekatan tugas pokok dan fungsi mengenai konservasi sumber daya alam hayati dan ekosistemnya menjadi lintas sektoral.",
       link: "/pengelolaan-kawasan/dasar-hukum/UU No. 32 Tahun 2024 tentang KSDAE.pdf"
-    }, 
-    {
-      uu: "UU No. 27 Tahun 2007  dan perubahannya, UU No. 1 Tahun 2014 .",
-      tentang: "Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil",
-      deskripsi: "Keberadaan dan pengelolaan KKP juga termasuk ke dalam Rencana Zonasi Wilayah Pesisir dan Pulau-pulau Kecil (RZWP-3-K). Selain kawasan konservasi, RZWP-3-K juga mencakup pengelolaan kawasan pemanfaatan umum, kawasan strategis nasional tertentu, dan kawasan alur laut.", 
-      link: {
-        1: {
-          namafile: "UU No. 27 Tahun 2007 tentang Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil",
-          link: "/pengelolaan-kawasan/dasar-hukum/UU No. 27 Tahun 2007 tentang Pengelolaan WP-3-K.pdf"
-        },
-        2: {
-          namafile: "UU No. 1 Tahun 2014 tentang Perubahan Atas UU No. 27 Tahun 2007 tentang Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil",
-          link: "/pengelolaan-kawasan/dasar-hukum/UU No. 1 Tahun 2014 tentang Perubahan Atas UU No. 27 Tahun 2007 Tentang Pengelolaan WP-3-K.pdf"
-        }
-      }
-    }
+    },    
   ];
   return (
     <main
@@ -159,6 +141,8 @@ export default function DasarHukum() {
 
       <section className="bg-black/40 py-20 px-6 space-y-32 md:px-20 backdrop-blur-sm">
         <div className="bg-[#194484]/80 rounded-xl p-10 text-gray-200 space-y-24">
+          <div className="space-y-8">
+            <p>Berikut ini adalah beberapa peraturan perundang-undangan tertinggi berdasarkan kronologi, yang merupakan dasar hukum mengenai keberadaan dari kawasan konservasi perairan serta tugas pokok dan fungsi dari pengelolaannya. </p>
           {/* Grid List Hukum */}
           <div className="grid grid-cols-1 gap-6">
             {hukumData.map((item, idx) => (
@@ -193,6 +177,7 @@ export default function DasarHukum() {
                 <DownloadButton links={item.link} label={item.uu} />
               </motion.div>
             ))}
+          </div>
           </div>
         </div>
       </section>
