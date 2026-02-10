@@ -84,7 +84,7 @@ export default function TugasPokokDanFungsi() {
   return (
     <main
       className="min-h-screen bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('/images/pengelolaan-kawasan/Foto 05 oleh Nikka Gunadharma.JPG')" }}
+      style={{ backgroundImage: "url('/images/pengelolaan-kawasan/Foto 02 oleh Nikka Gunadharma.jpg')" }}
     >
 
       <Navbar />
