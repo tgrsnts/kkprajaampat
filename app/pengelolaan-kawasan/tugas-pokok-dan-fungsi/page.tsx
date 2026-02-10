@@ -125,10 +125,9 @@ export default function TugasPokokDanFungsi() {
               <ShieldCheck size={200} className="text-blue-400" />
             </div>
 
-            <div className="relative z-10 max-w-3xl">
-              <h2 className="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs mb-6">Tugas Pokok</h2>
+            <div className="relative z-10 max-w-3xl">          
               <h3 className="text-white text-3xl md:text-5xl font-bold leading-tight mb-8">
-                Melaksanakan tugas teknis perlindungan, pemanfaatan, dan pelestarian KKP Kepulauan Raja Ampat.
+                Tugas Pokok
               </h3>
               <p className="text-gray-300 text-lg font-light leading-relaxed">
                 Berdasarkan dokumen Rencana Strategis Tahun 2024-2029 , tugas utama dari SUOP adalah membantu Kepala Dinas P2KP Papua Barat Daya untuk melaksanakan tugas teknis perlindungan, pemanfaatan, dan pelestarian KKP Kepulauan Raja Ampat. Tugas pokok dari BLUD UPTD Pengelolaan KKP Kepulauan Raja Ampat sebagai SUOP tersebut diperinci melalui beragam fungsi yang tidak dapat dipisahkan satu dengan lainnya.
