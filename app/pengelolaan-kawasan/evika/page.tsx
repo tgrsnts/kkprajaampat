@@ -160,22 +160,22 @@ export default function Evika() {
               {/* Grid Capaian */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
-                  { label: "Dasbor Input", val: 75, icon: <LogIn className="w-6 h-6 text-[#194484]" /> },
-                  { label: "Dasbor Proses", val: 82, icon: <RefreshCcw className="w-6 h-6 text-[#194484]" /> },
-                  { label: "Dasbor Output", val: 68, icon: <LogOut className="w-6 h-6 text-[#194484]" /> },
-                  { label: "Dasbor Outcome", val: 90, icon: <BarChart3 className="w-6 h-6 text-[#194484]" /> },
+                  { label: "Dasbor Input", val: 75, icon: <LogIn className="w-6 h-6 text-blue-400" /> },
+                  { label: "Dasbor Proses", val: 82, icon: <RefreshCcw className="w-6 h-6 text-green-400" /> },
+                  { label: "Dasbor Output", val: 68, icon: <LogOut className="w-6 h-6 text-yellow-400" /> },
+                  { label: "Dasbor Outcome", val: 90, icon: <BarChart3 className="w-6 h-6 text-purple-400" /> },
                 ].map((item, idx) => (
                   <motion.div
                     key={idx}
                     whileHover={{ y: -10 }}
-                    className="bg-white p-8 rounded-3xl flex flex-col items-center text-center shadow-2xl relative overflow-hidden"
+                    className="bg-white/10 p-8 rounded-3xl flex flex-col items-center text-center shadow-2xl relative overflow-hidden"
                   >
                     {/* Logo/Icon di bagian atas label */}
                     <div className="w-full flex flex-col items-start gap-8 mb-8">
-                      <div className="p-2 bg-blue-50 rounded-lg">
+                      <div className="p-2 bg-white/20 rounded-lg">
                         {item.icon}
                       </div>
-                      <span className="text 2xl text-[#194484] font-bold uppercase tracking-widest">
+                      <span className="text 2xl text-white font-bold uppercase tracking-widest">
                         {item.label}
                       </span>
                     </div>
