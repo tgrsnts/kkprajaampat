@@ -14,48 +14,78 @@ export default function AturanDanRegulasi() {
       {
         no: "PP No. 60 Tahun 2007",
         title: "Konservasi Sumber Daya Ikan",
-        desc: "Memperinci UU Perikanan mengenai KKP sebagai pendekatan pelestarian sumber daya.",
-        link: "/pengelolaan-kawasan/aturan-dan-regulasi/PP No. 60 Tahun 2007 tentang Konservasi Sumber Daya Ikan.pdf"
+        desc: "Mengatur KKP sebagai pendekatan untuk melestarikan sumber daya perikanan, memperinci UU No. 31/2004 dan UU No. 45/2009.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=0926418a0cd24a1b89144b4f7603b804"
       }
     ],
     Kementerian: [
       {
-        no: "Kepmen-KP No. 13/2021",
-        title: "Penetapan KKP Raja Ampat (Area I-VI)",
-        desc: "Mengesahkan status kawasan konservasi di perairan Kepulauan Raja Ampat.",
-        link: "/pengelolaan-kawasan/aturan-dan-regulasi/KEPMEN KP No. 13 Tahun 2021 Tentang Kawasan Konservasi di Perairan Kepulauan Raja Ampat di Provinsi Papua Barat.pdf"
+        no: "Permen-KP No. 17/2008",
+        title: "Kawasan Konservasi di WP-3-K",
+        desc: "Mendefinisikan KKP sebagai upaya perlindungan, pelestarian, dan pemanfaatan wilayah pesisir dan pulau-pulau kecil.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=860f950cb4b64b5d9096ddd38340c7f4"
       },
       {
-        no: "Kepmen-KP No. 191/2023",
-        title: "KKP Misool Utara (Area VII)",
-        desc: "Penetapan kawasan konservasi khusus untuk wilayah Misool Utara.",
-        link: "/pengelolaan-kawasan/aturan-dan-regulasi/KEPMEN KP tentang KKP di Misool Utara.pdf"
+        no: "Permen-KP No. 2/2009",
+        title: "Tata Cara Penetapan KKP",
+        desc: "Prosedur dan regulasi mengenai tata cara penetapan sebuah wilayah menjadi Kawasan Konservasi Perairan.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=0204ad26926c445bac03f4ff5be9f0f9"
+      },
+      {
+        no: "Permen-KP No. 3/2010",
+        title: "Status Perlindungan Jenis Ikan",
+        desc: "Mengatur tata cara penetapan status perlindungan bagi jenis-jenis ikan tertentu di perairan Indonesia.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=3320f4d237594f439db7d3b341f9e627"
+      },
+      {
+        no: "Permen-KP No. 4/2010",
+        title: "Pemanfaatan Jenis & Genetik Ikan",
+        desc: "Regulasi mengenai tata cara pemanfaatan jenis ikan dan genetik ikan dalam kawasan konservasi.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=6cf12f1683cd45ec95e6c57566bdf223"
       },
       {
         no: "Permen-KP No. 30/2010",
-        title: "Rencana Pengelolaan & Zonasi",
-        desc: "Aturan mengenai prosedur teknis penyusunan rencana pengelolaan dan zonasi KKP.",
-        link: "\pengelolaan-kawasan\aturan-dan-regulasi\PERMEN KP No. 30 Tahun 2010 Tentang Rencana Pengelolaan dan Zonasi KKP.pdf"
+        title: "Rencana Pengelolaan & Zonasi KKP",
+        desc: "Aturan teknis mengenai penyusunan rencana pengelolaan dan pembagian zona di dalam KKP.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=1e98f9a96573444080a6e22fb966cbeb"
+      },
+      {
+        no: "Kepmen-KP No. 13/2021",
+        title: "Penetapan KKP Raja Ampat (Area I-VI)",
+        desc: "Mengesahkan Kawasan Konservasi di Perairan Kepulauan Raja Ampat di bawah naungan Provinsi Papua Barat.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=63f56cfbc8d24b53955a8eb552ffa977"
+      },
+      {
+        no: "Kepmen-KP No. 191/2023",
+        title: "KKP di Misool Utara (Area VII)",
+        desc: "Penetapan Area VII Misool Utara sebagai bagian dari Kawasan Konservasi Perairan Kepulauan Raja Ampat.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=0a251524d4b6466981f0a27a05ee0c2b"
       }
     ],
     Regional: [
       {
-        no: "Pergub PBD No. 31/2024",
-        title: "Tata Kelola, SPM & Renstra",
-        desc: "Mengatur Pola Tata Kelola, Standar Pelayanan Minimal, dan Rencana Strategis SUOP.",
-        link: "\pengelolaan-kawasan\aturan-dan-regulasi\Pergub PBD No. 31 Tahun 2024 tentang Pola Tata Kelola, SPM dan Renstra SUOP KKP Kepulauan Raja Ampat.pdf"
+        no: "Pergub PBD No. 34",
+        title: "Penerimaan Hibah SUOP KKP",
+        desc: "Mengatur prosedur dan legalitas penerimaan hibah untuk mendukung operasional SUOP KKP Raja Ampat.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=3496e7167a0344e986bc6c8233d6993e"
+      },
+      {
+        no: "Pergub PBD No. 33/2024",
+        title: "Remunerasi SUOP KKP Raja Ampat",
+        desc: "Mengatur mengenai sistem remunerasi bagi personil pada Satuan Unit Organisasi Pengelola KKP.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=3a2fada854de47aabf6d89f0a3f3283d"
       },
       {
         no: "Perda PBD No. 3/2025",
         title: "Pajak & Retribusi Daerah (PDRD)",
-        desc: "Mengatur tarif retribusi layanan di kawasan konservasi Raja Ampat.",
-        link: "\pengelolaan-kawasan\aturan-dan-regulasi\Perda PBD No. 3 Tahun 2025 tentang PDRD.pdf"
+        desc: "Landasan hukum mengenai tarif retribusi layanan dan pajak daerah di Provinsi Papua Barat Daya.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=6b910ac119ec4008bca55f766fda123e"
       },
       {
-        no: "Pergub PBD No. 33/2024",
-        title: "Remunerasi SUOP KKP",
-        desc: "Aturan mengenai sistem pengupahan/remunerasi pada unit pengelola.",
-        link: "/pengelolaan-kawasan/aturan-dan-regulasi/Pergub PBD No. 33 Tahun 2024 tentang Remunerasi pada SUOP KKP Kepulauan Raja Ampat.pdf"
+        no: "Pergub PBD No. 31/2024",
+        title: "Tata Kelola, SPM & Renstra",
+        desc: "Landasan operasional mencakup Pola Tata Kelola, Standar Pelayanan Minimal, dan Rencana Strategis SUOP.",
+        link: "https://ug.link/nusantara/filemgr/share-download/?id=e7e878262320438c8c6c2a498d233a5d"
       }
     ]
   };
