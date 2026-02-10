@@ -146,13 +146,13 @@ export default function AturanDanRegulasi() {
       },
       {
         no: "Pergub PBD No. 33/2024",
-        title: "Remunerasi SUOP KKP Raja Ampat",
+        title: "Remunerasi Pada SUOP KKP Kepulauan Raja Ampat",
         desc: "Mengatur mengenai imbalan kerja bagi pegawai BLUD UPTD Pengelolaan KKP Kepulauan Raja Ampat berupa upah, honorarium, tunjangan, insentif, bonus, pesangon dan/atau dana pensiun.",
         link: "/pengelolaan-kawasan/aturan-dan-regulasi/Pergub PBD No. 33 Tahun 2024 tentang Remunerasi pada SUOP KKP Kepulauan Raja Ampat.pdf"
       },
       {
         no: "Pergub PBD No. 34",
-        title: "Penerimaan Hibah SUOP KKP",
+        title: "Penerimaan Hibah SUOP KKP Kepulauan Raja Ampat",
         desc: "Mengatur prosedur dan legalitas penerimaan hibah untuk mendukung operasional SUOP KKP Raja Ampat.",
         link: "/pengelolaan-kawasan/aturan-dan-regulasi/Pergub PBD No. 34 tentang Penerimaan Hibah untuk SUOP KKP Kepulauan Raja Ampat.pdf"
       },
@@ -193,9 +193,14 @@ export default function AturanDanRegulasi() {
       <section className="bg-black/40 py-20 px-6 space-y-32 md:px-20 backdrop-blur-sm">
         <div className="bg-[#194484]/80 rounded-xl p-10 text-gray-200 space-y-24">
           <div className="space-y-8">
-            <p>
-              Legalitas keberadaan dan pengelolaan tentang KKP pada umumnya, maupun yang terperinci mengatur tentang KKP Kepulauan Raja Ampat, diatur melalui aturan di beragam tingkatan pemerintah, mulai dari tingkat nasional hingga provinsi, mulai dari peraturan pemerintah, peraturan dan keputusan Menteri Kelautan dan Perikanan, hingga kepada Peraturan Gubernur (Pergub) Provinsi Papua Barat Daya.
-            </p>
+            <div className="space-y-4">
+              <p>
+                Legalitas keberadaan dan pengelolaan tentang KKP pada umumnya, maupun yang terperinci mengatur tentang KKP Kepulauan Raja Ampat, diatur melalui aturan di beragam tingkatan pemerintah, mulai dari tingkat nasional hingga provinsi, mulai dari peraturan pemerintah, peraturan dan keputusan Menteri Kelautan dan Perikanan, hingga kepada Peraturan Gubernur (Pergub) Provinsi Papua Barat Daya.
+              </p>
+              <p>
+                Di tingkat regional, KKP Kepulauan Raja Ampat dan unit pengelolanya diatur melalui beragam Peraturan Gubernur (Pergub) Papua Barat Daya. Sebagai Daerah Otonomi Baru (DOB) yang resmi terbentuk pada akhir tahun 2022, Papua Barat Daya kini sedang mempersiapkan RZWP-3-K serta revisi atas Rencana Pengelolaan dan Rencana Zonasi KKP Kepulauan Raja Ampat.
+              </p>
+            </div>
             <div className="flex bg-white/5 p-1.5 rounded-2xl border border-white/10 backdrop-blur-md">
               {categories.map((cat) => (
                 <button
@@ -208,11 +213,6 @@ export default function AturanDanRegulasi() {
                 </button>
               ))}
             </div>
-            { activeTab === "Regional" && (
-              <p>
-                Di tingkat regional, KKP Kepulauan Raja Ampat dan unit pengelolanya diatur melalui beragam Peraturan Gubernur (Pergub) Papua Barat Daya. Sebagai Daerah Otonomi Baru (DOB) yang resmi terbentuk pada akhir tahun 2022, Papua Barat Daya kini sedang mempersiapkan RZWP-3-K serta revisi atas Rencana Pengelolaan dan Rencana Zonasi KKP Kepulauan Raja Ampat.
-              </p>
-            )}
           </div>
 
           {/* Content Grid */}
