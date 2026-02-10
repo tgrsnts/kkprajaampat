@@ -52,7 +52,7 @@ const DownloadButton = ({ links, label }: { links: any, label: string }) => {
               {fileEntries.map(([key, url]: any, index) => (
                 <a
                   key={key}
-                  href={url}
+                  href={url.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition-colors text-[10px] uppercase font-bold tracking-wider border-b border-white/5 last:border-0"
