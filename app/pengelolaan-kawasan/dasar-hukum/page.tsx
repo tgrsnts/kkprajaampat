@@ -1,8 +1,73 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/app/Component/Navbar";
-import { FileText, Download, Gavel } from "lucide-react";
-import Speedometer from "@/app/Component/Speedometer";
+import { FileText, Download, ChevronDown } from "lucide-react";
+import { useState } from "react";
+
+
+const DownloadButton = ({ links, label }: { links: any, label: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Jika links hanya berupa string tunggal (1 file)
+  if (typeof links === "string") {
+    return (
+      <a
+        href={links}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-shrink-0 flex items-center gap-3 bg-white/10 hover:bg-white text-white hover:text-[#004267] px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 border border-white/10"
+      >
+        <Download className="w-4 h-4" />
+        Unduh PDF
+      </a>
+    );
+  }
+
+  // Jika links berupa object (banyak file)
+  const fileEntries = Object.entries(links);
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex-shrink-0 flex items-center gap-3 bg-white/10 hover:bg-white text-white hover:text-[#004267] px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 border border-white/10"
+      >
+        <Download className="w-4 h-4" />
+        Unduh PDF ({fileEntries.length})
+        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+      </button>
+
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Backdrop transparan untuk menutup dropdown saat klik di luar */}
+            <div className="fixed inset-0 z-40" onClick={() => setIsOpen(false)} />
+
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              className="absolute right-0 mt-2 w-64 bg-[#004267] border border-white/20 rounded-2xl shadow-2xl z-50 overflow-hidden backdrop-blur-xl"
+            >
+              {fileEntries.map(([key, url]: any, index) => (
+                <a
+                  key={key}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-5 py-4 text-white hover:bg-white/10 transition-colors text-[10px] uppercase font-bold tracking-wider border-b border-white/5 last:border-0"
+                >
+                  <FileText className="w-4 h-4 text-blue-400" />
+                  {url.namafile ? url.namafile : key}
+                </a>
+              ))}
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 export default function DasarHukum() {
   const hukumData = [
@@ -10,31 +75,40 @@ export default function DasarHukum() {
       uu: "UU No. 23 Tahun 2014",
       tentang: "Pemerintahan Daerah",
       deskripsi: "Mengatur peralihan kewenangan pengelolaan laut kepada pemerintah provinsi–BLUD UPTD Pengelolaan KKP Kepulauan Raja Ampat sekarang berada dalam naungan Dinas Pertanian, Pangan, Kelautan dan Perikanan (P2KP) Provinsi Papua Barat Daya.",
-      link: "https://ug.link/nusantara/filemgr/share-download/?id=79d7cde024ae415d9e61d906f9736575"
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 23 Tahun 2014 tentang Pemerintah Daerah (1).pdf"
     },
     {
       uu: "UU No. 32 Tahun 2014",
       tentang: "Kelautan",
       deskripsi: "Mengatur lebih jauh pengelolaan tersebut sebagai “penyelenggaraan kegiatan, penyediaan, pengusahaan dan pemanfaatan sumber daya kelautan serta konservasi laut.”",
-      link: "https://ug.link/nusantara/filemgr/share-download/?id=bb995a92a18e46a89a9af28c1950d9f9"
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 32 Tahun 2014 tentang Kelautan.PDF"
     },
     {
-      uu: "UU No. 6 Tahun 2023",
+      uu: "UU No. 27 Tahun 2007 yang direvisi melalui UU No. 6 Tahun 2023",
       tentang: "Cipta Kerja (Revisi UU 27/2007)",
       deskripsi: "Menggunakan terminologi ‘kawasan konservasi di wilayah pesisir dan pulau-pulau kecil’ yang, dalam peraturan turunan di tingkat menteri sekarang, berkembang menggunakan istilah ‘kawasan konservasi di perairan’ untuk merujuk kepada penetapan kawasan tertentu, termasuk bagi KKP Kepulauan Raja Ampat.",
-      link: "https://ug.link/nusantara/filemgr/share-download/?id=fc28e6b2f4624b6096b549a851286dd6"
+      link: "/pengelolaan-kawasan/dasar-hukum/UU No. 27 Tahun 2007 tentang Pengelolaan WP-3-K (1).PDF"
     },
     {
-      uu: "UU No. 31/2004 & UU No. 45/2009",
+      uu: "UU No. 31/2004 yang direvisi melalui UU No. 45/2009",
       tentang: "Perikanan",
       deskripsi: "Memperinci fungsi KKP sebagai salah satu pendekatan pengelolaan untuk melestarikan sumber daya perikanan. Dalam revisi UU ini terminologi ‘kawasan konservasi perairan’ sudah digunakan.",
-      link: "https://ug.link/nusantara/filemgr/share-download/?id=4f6d03eae79a437e9029e2b1c392e022"
+      link: {
+        1: {
+          namafile: "UU No. 31 Tahun 2004 tentang Perikanan",
+          link: "public/pengelolaan-kawasan/dasar-hukum/UU No. 31 Tahun 2004 tentang Perikanan.pdf"
+        },
+        2: {
+          namafile: "UU No. 45 Tahun 2009 tentang Perubahan Atas UU Perikanan",
+          link: "public/pengelolaan-kawasan/dasar-hukum/UU No. 45 Tahun 2009 tentang Perubahan Atas UU Perikanan.pdf"
+        }
+      }
     },
     {
       uu: "UU No. 32 Tahun 2024",
       tentang: "KSDAE (Revisi UU 5/1990)",
       deskripsi: "Menjabarkan “kawasan konservasi di perairan , wilayah pesisir dan pulau-pulau kecil” sebagai bagian dari “pengelolaan sumber daya alam hayati” dan “perlindungan sistem penyangga kehidupan.”",
-      link: "https://ug.link/nusantara/filemgr/share-download/?id=b9e2e2f1445c463686e6acb4bae6e950"
+      link: "pengelolaan-kawasan/dasar-hukum/UU No. 32 Tahun 2024 tentang KSDAE.pdf"
     }
   ];
   return (
@@ -101,15 +175,7 @@ export default function DasarHukum() {
                 </div>
 
                 {/* Tombol Download */}
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center gap-3 bg-white/10 hover:bg-white text-white hover:text-[#004267] px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 border border-white/10"
-                >
-                  <Download className="w-4 h-4" />
-                  Unduh PDF
-                </a>
+                <DownloadButton links={item.link} label={item.uu} />
               </motion.div>
             ))}
           </div>
