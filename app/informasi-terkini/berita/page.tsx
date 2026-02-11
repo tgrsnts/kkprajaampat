@@ -35,7 +35,7 @@ export default function Berita() {
   return (
     <main
       className="min-h-screen bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('/images/RAMS.png')" }}
+      style={{ backgroundImage: "url('/images/informasi-terkini/berita/Foto 06 oleh Rens Lewerissa.JPG')" }}
     >
       <Navbar color="#004267" />
 
